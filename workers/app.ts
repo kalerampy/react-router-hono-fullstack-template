@@ -16,4 +16,8 @@ app.get("*", (c) => {
 	});
 });
 
+app.get("/api", () => {
+	return {"Hello World": "Test"};
+})
+
 export default app;
