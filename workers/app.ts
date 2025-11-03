@@ -4,6 +4,9 @@ import { createRequestHandler } from "react-router";
 const app = new Hono();
 
 // Add more routes here
+app.get("/api", () => {
+	return {"Hello World": "Test"};
+})
 
 app.get("*", (c) => {
 	const requestHandler = createRequestHandler(
@@ -16,8 +19,5 @@ app.get("*", (c) => {
 	});
 });
 
-app.get("/api", () => {
-	return {"Hello World": "Test"};
-})
 
 export default app;
