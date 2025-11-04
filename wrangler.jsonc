@@ -42,5 +42,12 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
 	 */
 	// "services": [{ "binding": "MY_SERVICE", "service": "my-service" }]
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"kv_namespaces": [
+		{
+			"binding": "TEST_KV",
+			"id": "b61d18211f784b50bc3e4c9e4b703fa2",
+			"remote": true
+		}
+	]
 }

@@ -4,6 +4,7 @@
 declare namespace Cloudflare {
 	interface Env {
 		VALUE_FROM_CLOUDFLARE: "Hello from Hono/CF";
+        TEST_KV: KVNamespace;
 	}
 }
 interface Env extends Cloudflare.Env {}
